@@ -1,5 +1,5 @@
 {
-    "name": "media365/laravel-sms",
+    "name": "media365/transmitter",
     "description": "Laravel 5+ SMS Sender",
     "license": "MIT",
     "authors": [
@@ -30,6 +30,6 @@
             "aliases": {
                 "Transmitter": "Media365\\Transmitter\\Facades\\Transmitter"
             }
-        },
+        }
     }
 }
