@@ -1,0 +1,35 @@
+{
+    "name": "media365/laravel-sms",
+    "description": "Laravel 5+ SMS Sender",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Al Imran Ahmed",
+            "email": "al.imran.cse@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^7.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Media365\\LaravelSMS\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Media365\\Transmitter\\TransmitterServiceProvider"
+            ],
+            "aliases": {
+                "Transmitter": "Media365\\Transmitter\\Facades\\Transmitter"
+            }
+        },
+    }
+}
