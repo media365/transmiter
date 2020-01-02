@@ -41,6 +41,6 @@ class Textvertising implements SMS
             return true;
         }
 
-        throw new \Exception("SMS sending failed to $mobile: " . $response->getBody()->getContents());
+        throw new \Exception("SMS sending failed to $mobile");
     }
 }
