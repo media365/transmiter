@@ -12,9 +12,10 @@ composer install media365/transmitter
 php artisan vendor:publish --provider="Media365\Transmitter\TransmitterServiceProvider"
 ```
 
-Don't forget to add the credentials for your sms gateway(Texvertising). Feel free to change the SMS gateway driver
-class. To log sms instead of sending sms there is a driver called 'LogSMS'. To use this put 
-`\Media365\Transmitter\Services\Textvertising::class` as driver. 
+Don't forget to add the credentials for your sms gateway(Texvertising) in `config/transmitter.php`. 
+Feel free to change the SMS gateway driver class. 
+To log sms instead of sending sms there is a driver called 'LogSMS' out of the box. To use this set 
+`\Media365\Transmitter\Services\LogSMS::class` as driver in the `config/transmitter.php`. 
 
 ## Usages
 
