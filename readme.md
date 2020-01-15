@@ -4,7 +4,7 @@ SMS gateway integration. Available drivers: Textvertising(UK), Log etc.
 ## Installation
 1. Install the package
 ```
-composer install media365/transmitter
+composer require media365/transmitter
 ```
 2. Publish the configuration file to `config/transmitter.php` using the following command:
 
